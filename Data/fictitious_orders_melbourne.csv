@@ -1,0 +1,31 @@
+order_id,order_timestamp,delivery_zone,item_count,promised_window,fulfilment_stage,basket_category,simulated_delay_flag,is_synthetic
+ORD-20260101-001,2026-01-01 08:10,Melbourne CBD,3,08:00-10:00,packed,groceries,FALSE,TRUE
+ORD-20260101-002,2026-01-01 09:45,Inner North,5,09:00-11:00,picked,household,FALSE,TRUE
+ORD-20260101-003,2026-01-01 12:15,South East Melbourne,2,12:00-14:00,packed,essentials,FALSE,TRUE
+ORD-20260101-004,2026-01-01 18:20,Western Suburbs,4,18:00-20:00,packed,groceries,FALSE,TRUE
+ORD-20260101-005,2026-01-01 20:05,Eastern Suburbs,6,19:30-21:30,dispatched,meal-kit,FALSE,TRUE
+ORD-20260102-006,2026-01-02 07:55,Northern Suburbs,2,08:00-09:30,picked,essentials,FALSE,TRUE
+ORD-20260102-007,2026-01-02 10:30,Melbourne CBD,7,10:00-12:00,packed,office-supplies,FALSE,TRUE
+ORD-20260102-008,2026-01-02 12:40,South East Melbourne,3,12:00-14:00,dispatched,groceries,TRUE,TRUE
+ORD-20260102-009,2026-01-02 15:10,Inner North,4,15:00-17:00,packed,health,FALSE,TRUE
+ORD-20260102-010,2026-01-02 19:50,Western Suburbs,8,18:30-21:00,dispatched,bulk-order,FALSE,TRUE
+ORD-20260103-011,2026-01-03 08:20,Melbourne CBD,2,08:00-10:00,picked,coffee,FALSE,TRUE
+ORD-20260103-012,2026-01-03 09:35,Eastern Suburbs,5,09:00-11:00,packed,groceries,FALSE,TRUE
+ORD-20260103-013,2026-01-03 11:50,Northern Suburbs,3,11:30-13:30,packed,essentials,FALSE,TRUE
+ORD-20260103-014,2026-01-03 16:15,South East Melbourne,6,16:00-18:00,dispatched,meal-kit,TRUE,TRUE
+ORD-20260103-015,2026-01-03 21:00,Western Suburbs,4,20:30-22:30,packed,night essentials,FALSE,TRUE
+ORD-20260104-016,2026-01-04 07:40,Inner North,2,07:30-09:30,picked,coffee,FALSE,TRUE
+ORD-20260104-017,2026-01-04 10:15,Melbourne CBD,9,10:00-12:30,packed,office-supplies,FALSE,TRUE
+ORD-20260104-018,2026-01-04 13:10,Eastern Suburbs,3,13:00-15:00,picked,groceries,FALSE,TRUE
+ORD-20260104-019,2026-01-04 17:45,South East Melbourne,5,17:30-19:30,dispatched,meal-kit,FALSE,TRUE
+ORD-20260104-020,2026-01-04 20:20,Northern Suburbs,7,19:30-21:30,packed,bulk-order,TRUE,TRUE
+ORD-20260105-021,2026-01-05 08:05,Western Suburbs,2,08:00-10:00,picked,essentials,FALSE,TRUE
+ORD-20260105-022,2026-01-05 11:30,Inner North,4,11:00-13:00,packed,household,FALSE,TRUE
+ORD-20260105-023,2026-01-05 13:40,Melbourne CBD,6,13:00-15:30,dispatched,groceries,TRUE,TRUE
+ORD-20260105-024,2026-01-05 18:10,Eastern Suburbs,3,18:00-20:00,picked,coffee,FALSE,TRUE
+ORD-20260105-025,2026-01-05 19:55,South East Melbourne,8,19:00-21:30,packed,meal-kit,FALSE,TRUE
+ORD-20260106-026,2026-01-06 09:25,Northern Suburbs,2,09:00-11:00,picked,health,FALSE,TRUE
+ORD-20260106-027,2026-01-06 12:00,Western Suburbs,5,11:30-13:30,packed,groceries,FALSE,TRUE
+ORD-20260106-028,2026-01-06 16:30,Inner North,3,16:00-18:00,dispatched,essentials,FALSE,TRUE
+ORD-20260106-029,2026-01-06 18:45,Melbourne CBD,4,18:30-20:30,packed,office-supplies,FALSE,TRUE
+ORD-20260106-030,2026-01-06 21:15,Eastern Suburbs,6,20:30-22:30,dispatched,bulk-order,FALSE,TRUE
