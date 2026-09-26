@@ -8,13 +8,47 @@ This note records the assumptions used to explore the data and the limits that s
 
 ## Data currently in the project
 
-| Dataset          | Current contents                            | Notes                                                                                                                       |
-| ---------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Fictional orders | 30 records dated 1-6 January 2026           | Includes six broad Melbourne delivery-zone labels and simulated order attributes. Every row is labelled synthetic.          |
-| Temperature      | Bureau of Meteorology station number 086338 | Daily maximum-temperature observations. Confirm the official station location and the usable date coverage before analysis. |
-| Rainfall         | Bureau of Meteorology station number 086232 | Daily rainfall observations. Confirm the official station location and the usable date coverage before analysis.            |
+|Dataset|Current contents|Notes|
+|-|-|-|
+|Fictional orders|30 records dated 1-6 January 2026|Includes six broad Melbourne delivery-zone labels and simulated order attributes. Every row is labelled synthetic.|
+|Temperature|Bureau of Meteorology station number 086338|Daily maximum-temperature observations. Confirm the official station location and the usable date coverage before analysis.|
+|Rainfall|Bureau of Meteorology station number 086232|Daily rainfall observations. Confirm the official station location and the usable date coverage before analysis.|
 
 The temperature and rainfall files have different station numbers. They should not be described as measurements from the same location unless the station metadata confirms that interpretation.
+
+## Data download and URL
+
+https://www.bom.gov.au/climate/data/
+
+**procedure: Rainfall**
+
+
+
+1. Select Rainfall in "Data about" section under Text search and Type of data Daily/
+2. Select weather station to be Melbourne.
+3. add matching town to be 'Melbourne, VIC, 37.84°S, 144.98°E.
+4. Nearest Burea stations select "086338 Melbourne (Olympic Park) VIC (1.6km away).
+5. selected select year as "2026".
+6. select get data.
+7. You will be directed to another page and on the top right above the dable select "all years of data".
+
+
+
+**procedure: Temperature**
+
+
+
+1. Select Temperature in "Data about" section under Text search and Type of data Daily
+2. Select weather station to be Melbourne.
+3. add matching town to be 'Melbourne, VIC, 37.84°S, 144.98°E
+4. Nearest Burea stations select "086338 Melbourne (Olympic Park) VIC (1.6km away)
+5. selected select year as "2026"
+6. select get data
+7. You will be directed to another page and on the top right above the dable select "all years of data"
+
+
+
+
 
 ## Assumptions
 
@@ -28,15 +62,15 @@ The temperature and rainfall files have different station numbers. They should n
 
 ## Limitations
 
-- The order data is synthetic, so patterns in it do not establish how real Melbourne customers or fulfilment teams behave.
-- Six days of orders are too little to support reliable claims about weekly, seasonal, or annual patterns.
-- One weather station per measure cannot represent weather variation across all Melbourne delivery zones.
-- The station IDs differ between the temperature and rainfall files. Their locations and date coverage must be checked before combining the measures as one local weather record.
-- There is no precise zone-to-weather-station mapping in the current data. Zone-specific weather effects cannot be assessed from these files.
-- A relationship between weather and simulated order activity does not prove that weather caused a change in demand or delays.
-- The simulated delay flag is not an observed delivery outcome and should not be presented as a real service-performance measure.
-- Other possible influences, such as promotions, public holidays, traffic, inventory, staffing, and delivery capacity, are not represented in the current order data.
-- The source URL, download date, and applicable terms for the weather files should be recorded alongside the project before public release.
+* The order data is synthetic, so patterns in it do not establish how real Melbourne customers or fulfilment teams behave.
+* Six days of orders are too little to support reliable claims about weekly, seasonal, or annual patterns.
+* One weather station per measure cannot represent weather variation across all Melbourne delivery zones.
+* The station IDs differ between the temperature and rainfall files. Their locations and date coverage must be checked before combining the measures as one local weather record.
+* There is no precise zone-to-weather-station mapping in the current data. Zone-specific weather effects cannot be assessed from these files.
+* A relationship between weather and simulated order activity does not prove that weather caused a change in demand or delays.
+* The simulated delay flag is not an observed delivery outcome and should not be presented as a real service-performance measure.
+* Other possible influences, such as promotions, public holidays, traffic, inventory, staffing, and delivery capacity, are not represented in the current order data.
+* The source URL, download date, and applicable terms for the weather files should be recorded alongside the project before public release.
 
 ## Interpretation guidance
 
@@ -46,14 +80,15 @@ Do not claim that the analysis predicts real fulfilment outcomes, measures actua
 
 ## Checks before joining the datasets
 
-- Confirm the official locations and metadata for weather stations 086338 and 086232.
-- Confirm valid dates and missing observations in both weather files.
-- Identify the dates shared by the order and weather datasets.
-- Confirm and document the timezone interpretation of order timestamps.
-- Aggregate orders to daily totals for comparison with daily weather.
-- Check that any join preserves the expected row counts and does not duplicate orders.
+* Confirm the official locations and metadata for weather stations 086338 and 086232.
+* Confirm valid dates and missing observations in both weather files.
+* Identify the dates shared by the order and weather datasets.
+* Confirm and document the timezone interpretation of order timestamps.
+* Aggregate orders to daily totals for comparison with daily weather.
+* Check that any join preserves the expected row counts and does not duplicate orders.
 
 ## Related project documents
 
-- [Assignment specifications](Fulfilment_Pulse_Assignment_Specs.md)
-- [Fabric master blueprint](Fulfilment_Pulse_Fabric_Master_Blueprint.md)
+* [Assignment specifications](Fulfilment_Pulse_Assignment_Specs.md)
+* [Fabric master blueprint](Fulfilment_Pulse_Fabric_Master_Blueprint.md)
+
