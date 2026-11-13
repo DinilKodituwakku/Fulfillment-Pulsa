@@ -45,7 +45,7 @@ A Databricks job runs the configured notebooks in dependency order. Publishing t
 | Notebook | Purpose |
 |---|---|
 | [Data exploration](Data%20exploration.ipynb) | Explore the source data, missing values, date coverage and order patterns. |
-| [Bronze and Silver preparation](fulfilment_pulsa_silver.ipynb) | Ingest source data, inspect records and prepare fields for analysis. |
+| [Bronze and Silver preparation](fulfilment_pulsa_bronze_and_silver.ipynb) | Ingest source data, inspect records and prepare fields for analysis. |
 | [Gold reporting tables](fulfillment_gold.ipynb) | Build daily, hourly and delivery-zone summaries, weather data and dimensions. |
 | [Publish Gold to Fabric](04_Gold_to_fabric.ipynb) | Authenticate and write the listed Gold tables to the Fabric lakehouse. |
 
